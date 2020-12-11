@@ -69,7 +69,7 @@ window.addEventListener('scroll', function(){
             menu.classList.toggle('active')
         }
 
-//---------------- read more - read less effect ----------------//
+//---------------- read more - read less effect [not used yet] ----------------//
 function myFunction() {
           
           var dots = document.getElementById("dots");

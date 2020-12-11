@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&display=swap');
 
 * {
-	margin: 0;
+	margin: 0 ;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Arimo', sans-serif;
@@ -318,7 +318,7 @@ img {
 
 
 .contactInfo {
-	min-width: 40%;
+	min-width: 50%;
 
 }
 
@@ -328,7 +328,7 @@ img {
 
 .contactInfoTp .box {
 	position: relative;
-	padding: 20px 0;
+	padding: 20px;
 	display: flex;
 }
 

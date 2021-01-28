@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&display=swap');
 
 * {
-	margin: 0 ;
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Arimo', sans-serif;
@@ -12,6 +12,11 @@ font-family: 'Open Sans', sans-serif;
 section {
 	padding: 100px;
 
+}
+
+.btn-brown {
+	background-color: #333 !important;
+	color: #fff !important;
 }
 
 .banner {

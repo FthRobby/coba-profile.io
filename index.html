@@ -27,11 +27,19 @@
 	<script src="https://kit.fontawesome.com/e634cbd12e.js" crossorigin="anonymous"></script>
 
 	<!-- aos tag -->
-	<link rel="stylesheet" href="assets/css/aos.css" />
-	
+	<link rel="stylesheet" href="assets/css/aos.css">
+	<script src="assets/js/aos.js"></script>
 
 </head> 
-<body>         
+<body>
+
+	  <script>
+	    AOS.init({
+	    	offset: 300,
+	    	duration: 500,
+	    });
+	  </script>
+
 	<header>
 		<a class="logo" href="#">FATAH ROBBY</a>
 		<div class="toggle" onclick="toggleMenu()"></div>
@@ -40,31 +48,31 @@
 			<li><a href="#about" onclick="toggleMenu()">About</a></li>
 			<li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
 			<li><a href="#work" onclick="toggleMenu()">Work</a></li> 
-			<!--<li><a href="#testimonial" onclick="toggleMenu()">Testimonial </a></li> -->
+			<!-- <li><a href="#testimonial" onclick="toggleMenu()">Testimonial </a></li> -->
 			<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 		</ul>
 	</header>
 	<!-- Home -->
 	<section class="banner" id="home">
 		<div class="textTp">
-			<h2>Hello, I'm<br><p class="text-white typewrite" data-period="2000" data-type='[ "Fatah Robby","Student"]'><span class="wrap"></span></p></h2>
+			<h2>Hello, I'm<br><p class="text-white typewrite" data-period="2000" data-type='[ "Fatah Robby"]'><span class="wrap"></span></p></h2>
 			<a href="https://github.com/FthRobby" target="_blank"><i class="fab fa-github"></i></a>
 			<a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram text-white"></i></a>
 			<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter text-white"></i></a>
 			<a href="#contact"><i class="fas fa-envelope text-white"></i></a><br>
-			<a href="#about"><button type="button" class="btn btn-info btn-lg mt-3 rounded-sm">About Me </button></a>
+			<a href="#about"><button type="button" class="btn btn-brown btn-lg mt-3 rounded-sm">About Me </button></a>
 		</div>
 	</section>
 	<section class="about" id="about">
 		<div class="heading">
 			<h2 class="text-center">About Me :</h2>
 		</div>
-		<div class="content" data-aos="flip-left">
+		<div class="content">
 			<div class="contentTp w50">
-				<h3 class="text-center mb-3">I'm a Web Developer.</h3>
-				<p class="text-left ml-4">Hello my name is Fatah Robby, you can call me Roby. I was born in 2000 at Purwokerto, Central Java, Indonesia. I'am an informatics engineering student at STMIK AKAKOM YOGYAKARTA.</p>
+				<h3 class="text-center">I'm a Web Developer.</h3>
+				<p class="text-center ml-4">Hello my name is Fatah Robby, you can call me Roby. I was born in 2001 at Purwokerto, Central Java, Indonesia. </p>
 			</div>
-			<div class="w50">
+			<div class="w50" data-aos="flip-up">
 				<img src="assets/img/about.jpeg" class="img" alt="it's me">
 			</div>
 		</div>
@@ -81,17 +89,17 @@
 				<h2 class="font-weight-bolder">Web Design</h2>
 				<p>Designing web content, Designing the initial appearance and improving the appearance of the web.</p>
 			</div>
-			<div class="skillTp" data-aos="fade-right">
+			<div class="skillTp" data-aos="fade-down">
 				<img src="assets/img/icon3.jpeg">
 				<h2 class="font-weight-bolder">Responsive Web</h2>
-				<p>Web design system approach that aims to provide an optimal surfing experience on various devices, both mobile and desktop computers..</p>
+				<p>Web design system approach that aims to provide an optimal surfing experience on various devices, both mobile and desktop computers.</p>
 			</div>
 			<!--<div class="skillTp">
 				<img src="assets/img/icon2.png">
 				<h2 class="font-weight-bolder">System and Network Security</h2>
 				<p>Protect the network system from unauthorized access, illegal users, security compromise, modification or interference to the system.</p>
 			</div>-->
-			<div class="skillTp" data-aos="fade-up">
+			<div class="skillTp" data-aos="fade-down">
 				<img src="assets/img/icon4.png">
 				<h2 class="font-weight-bolder">Hardware Repair</h2>
 				<p>Troubleshoot hardware components and network problems.</p>
@@ -110,9 +118,9 @@
 			  	 <div class="card mb-4 shadow-lg card-center">
 			        <img src="assets/img/work-1.jpg" class="card-img-top" title="Roby Bike | Tips and Trick for Cycling" alt="Roby Bike">
 			        <div class="card-body">
-			        <p class="card-text">Create a dynamic web-based application to display food,drink and coffee menu's in a coffe shop.</p>
+			        <p class="card-text">Create static web-based application to display food,drink and coffee menu's in a coffe shop.</p>
 			        <p class="card-text"></p>
-			       <p class="text-muted" style="font-size: 18px">Technology used : <i class="fab fa-html5" style="color: #FFA500"></i> <i class="fab fa-css3-alt" style="color: #1E90FF"></i> <i class="fab fa-js-square" style="color: #FFD700"></i> <i class="fab fa-bootstrap" style="color: #8F00FF"></i> </p>
+			       <p class="text-muted" style="font-size: 18px">Technology used : <i class="fab fa-html5" style="color: #FFA500"></i> <i class="fab fa-css3-alt" style="color: #1E90FF"></i> <i class="fab fa-js-square" style="color: #FFD700"></i> <i class="fab fa-bootstrap" style="color: #8F00FF"></i> <i class="fab fa-react" style="color: #1E90FF"></i> </p>
 			        <div class="d-flex justify-content-between align-items-center">
 			            <!-- <div class="btn-group">
 			                <a href="https://kembalilagimenu.netlify.app/index.html" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary">View blog</button></a>
@@ -122,7 +130,8 @@
 			</div>
 		</div>
 	</div>
-	</section> 		
+	</section>
+
 	<!-- Testimonial
 	<section class="testimonial" id="testimonial">
 		<div class="heading">
@@ -133,13 +142,14 @@
 			<div class="testimonialTp">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<h3>Someone Famous<br><span>Creative Designer</span></h3>
-</div>	
+			</div>	
 			<div class="testimonialTp">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<h3>Someone Famous<br><span>Creative Designer</span></h3>
-					</div>
+			</div>
 		</div>
 	</section> -->
+
 	<!-- Contact -->
 	<section class="contact bg-dark" id="contact">
 		<div class="heading white">
@@ -195,7 +205,7 @@
 							<a href="https://instagram.com/f.robby_" target="_blank">f.robby_</a>
 						</div>
 					</div>
-					<div class="box" >
+					<!--<div class="box" >
 						<div class="icon">
 							<i class="fa fa-twitter" style="color: #1E90FF"></i>
 						</div>
@@ -203,7 +213,7 @@
 							<h3>Twitter</h3>
 							<a href="https://twitter.com/" target="_blank">f.robby_</a>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div><!--
 			<div class="formTp">
@@ -217,9 +227,10 @@
 			</div>-->
 		</div>
 	</section>
-	<footer class="footer ">
-        <div class="text-white"  >
-          <div class="container text-center ">
+
+	<footer class="footer">
+        <div class="text-white">
+          <div class="container text-center">
             <div class="row">
                 <div class="col-md">
                   <p class="mt-2">made with <i class="fa fa-heart text-danger"></i> and <i class="fa fa-coffee" style="color: chocolate"></i> in Bantul, Yogyakarta, Indonesia</p>
@@ -227,19 +238,13 @@
             </div>
             <div class="row py-1 border-top border-white">
             	<div class="col">
-			<small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Fatah RobbySalam</small>
+                	<small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Fatah RobbySalam</small>
            		</div>
         	</div>
           </div>
         </div>
     </footer>
-    <script src="assets/js/aos.js"></script>
-	  <script>
-	    AOS.init({
-	    	offset: 300,
-	    	duration: 500,
-	    });
-	  </script>
 
+    
 </body>
 </html>
